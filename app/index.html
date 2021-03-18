@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#!/home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!/formulario">Formulario</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#!/httpreq">Http Request</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<div ng-view></div>
+
+
+
+  <!--BOOTSTRAP SCRIPTS-->
+  <script src="lib/bootstrap/jquery-3.4.1.slim.min.js"></script>
+  <script src="lib/bootstrap/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  <!--Angular JS-->
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <!--SCRIPTS APP-->
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="formulario/formulario.js"></script>
+  <script src="httpRequest/httpRequest.js"></script>
+  <script src="core/version/version.js"></script>
+  <script src="core/version/version-directive.js"></script>
+  <script src="core/version/interpolate-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="h2">
+            Fomulario
+        </div>
+    </div>
+
+    <div class="row p-3 my-3 border rounded border-primary">
+        <form class="col-md-12 col-12 wa" ng-class="{'was-validated': validate}">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" ng-model="user.nome" required>
+                </div>
+                <div class="form-group col-6">
+                    <label>Idade</label>
+                    <input type="text" class="form-control" ng-model="user.idade" required>
+                </div>
+                <div class="form-group col-6">
+                    <label>Telefone</label>
+                    <input type="text" class="form-control" ng-model="user.telefone" required>
+                </div>
+                <div class="form-group col-6">
+                    <label>Cidade</label>
+                    <input type="text" class="form-control" ng-model="user.cidade">
+                </div>
+            </div>
+            <div class="row justify-content-center my-4">
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    ng-click="saveUser()"
+                    ng-disabled="loading"
+                >
+                    <div ng-show="loading" class="spinner-border spinner-border-sm" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
